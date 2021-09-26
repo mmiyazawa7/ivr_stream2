@@ -63,7 +63,7 @@ Deploy this App to Heroku
 Setup env parameters to Config Vars in heroku
 
     Open 'https://dashboard.heroku.com/apps/(your heroku app name)/settings'
-    Set `Concig Vars`
+    Set `Concig Vars`   
     
     API_KEY
     API_SECRET
@@ -73,6 +73,7 @@ Setup env parameters to Config Vars in heroku
     WEBHOOK_URL        (Webhook URL on heroku)
     WEB_PORT            (Web Port for this App)
     ADMIN_NUMBER        (Admin Phone Numnber)
+    OPERATOR_NUMBER     (Operator Phone Number)
 
 
 Monitor heroku logs
