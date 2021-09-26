@@ -117,7 +117,8 @@ def dtmfresponse():
         resp = Response(js, status=200, mimetype='application/json')
         logger.debug('Response NCCO Notification_1-2 Stream')
         sms_text2 = "（デモ）お支払いに関するご案内です。お振込金額は、32600円です。お支払期日は、10月15日まで。お振込み先口座は、エーアイ銀行文京支店、普通口座、1234567です。"
-        response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': session['from'], 'text': sms_text2})
+        sms_sendto =  session['from']
+        response_SMS = client_sms.send_message({'from': 'NexmoJapan', 'to': sms_sendto, 'text': sms_text2})
         logger.debug(response_SMS)
         logger.debug(sms_text2)
         print(resp)
